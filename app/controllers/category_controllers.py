@@ -3,7 +3,7 @@ from app.status_codes import HTTP_400_BAD_REQUEST ,HTTP_201_CREATED ,HTTP_500_IN
 from app.models.category import Category
 from app.extensions import db
 
-#creating product blue  for product.
+#creating product blue  for category.
 category = Blueprint('category', __name__, url_prefix='/api/v1/category')
 
 @category.route('/create' , methods=['POST'])
